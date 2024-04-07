@@ -1,0 +1,249 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    line-height: 1.3;
+}
+.container{
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+.A5{
+    color: #A59678;
+}
+
+/* Hamburger menu and Hamburger icon styling  styling */
+.toggle__icon{
+    position: absolute;
+    /* top: .2em; */
+    left: 1.3em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 30px;
+    height: 20px;
+    transition: .4s;
+}
+
+.bar{
+    background-color: #fff;
+    height: 3px;
+    width: 100%;
+    border-radius: 7px;
+}
+
+header{
+    background-color: #2E323F;
+    text-align: center;
+    padding: 1.8em 0;
+}
+.logo{
+    transition: .4s;
+}
+
+.nav{
+    transition: .4s;
+}
+
+.nav__items{
+    list-style-type: none;
+}
+.nav__item{
+    margin-top: 2em ;
+    transition: .4s;
+}
+
+.nav__item a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.signup-btn {
+    background-color: #A59678;
+    padding: .3em 1.3em;
+    border-radius: 30px;
+    
+}
+.toggle__icon:hover,.toggle__icon:focus,
+.nav__item:hover,.nav__item:focus,
+.logo:hover,.logo:focus,
+.btn:hover{
+    opacity: .6;
+}
+
+/* Javascript styling */
+.nav{
+    display: none;
+}
+.nav__visible{
+    display: flex;
+    justify-content: center;
+    transition: .4s;
+}
+/* section styling */
+.hero{
+    background-color: #3B4050;
+    padding-top: 4em;
+    padding-bottom: 6em;
+    color: #fff;
+}
+.hero__title{
+    font-size: 3em;
+    line-height: 1.2em;
+}
+.hero__text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.7em;
+    margin-top: 1.4em;
+    margin-bottom: 2em;
+}
+.btn{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    background-color: #A59678;
+    padding: .2em 1.1em;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+
+.sec--one{
+    background-color: #d6d8e1;
+    padding: 2em 0;
+    text-align: center;
+}
+.sec--one .col{
+    margin: 1em 0;
+}
+.sec--one h3{
+    font-size: 1.7rem;
+    margin-bottom: 1em;
+}
+.sec--one p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+
+.sec--two{
+    padding: 3.6em 0;
+}
+.sec--two--title{
+    margin-bottom: .7em;
+    font-size: 1.7rem;
+}
+.sec--two--text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    padding: 1.2em 0;
+}
+
+.grey--sec{
+    background-color: #3b4050;
+    margin: 1em 0;
+    text-align: center;
+    color: #fff;
+    padding: 2em .4em;
+}
+.grey--sec h3{
+    margin-bottom: .9em;
+}
+.grey--sec p{
+    font-family: 'Montserrat',sans-serif;
+    font-size: .8rem;
+    width: 97%;
+    text-align: center;
+}
+
+.sec--three{
+    background-color: #3b4050;
+    padding: 3.6em 0;
+}
+.footer--title{
+    color: #fff;
+    font-size: 3.3rem;
+}
+.footer h3{
+    margin: 1.4em 0;
+    font-size: 1.6rem;
+}
+.footer p{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Media queries */
+
+@media (min-width: 600px) {
+    .sec--two--aside{
+        display: flex;
+        gap: 1em;
+    }
+}
+
+@media (min-width:850px) {
+    .row{
+        display: flex;
+        justify-content: space-between;
+        gap: 4em;
+    }
+    /* nav styling */
+    .toggle__icon{
+        display: none;
+    }
+
+    .nav{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav__items{
+        display: flex;
+    }
+
+    .nav__item{
+        margin: 0;
+        padding: 0 1em;
+    }
+/* hero styling */
+    .hero__title{
+        font-size: 5rem;
+    }
+    .hero__text{
+        margin-top: 5em;
+    }
+    .text__col{       
+        width: 1600px;
+    }
+    .btn{
+        padding: .2em 2.1em;
+        font-weight: 500;
+    }
+
+    /* Section styling */
+    .sec--two--aside{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer--title{
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    .one{
+        width: 40%;
+    }
+}
